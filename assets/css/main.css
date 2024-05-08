@@ -6851,16 +6851,16 @@ blockquote {
   transform: translateY(0); }
 
 .progress-wrap.style-2::after {
-  color: #15B785; }
+  color: #d15497; }
 
 .progress-wrap.style-2 svg.progress-circle path {
-  stroke: #15B785; }
+  stroke: #d15497; }
 
 .progress-wrap.style-3::after {
-  color: #45ACAB; }
+  color: #d15497; }
 
 .progress-wrap.style-3 svg.progress-circle path {
-  stroke: #45ACAB; }
+  stroke: #d15497; }
 
 /*----------------------------------------*/
 /*  24. breadcrumb
@@ -7389,3 +7389,6 @@ justify-content: center;
   width: 69px;
   height: 69px;
 }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
