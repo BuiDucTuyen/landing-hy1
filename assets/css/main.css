@@ -337,8 +337,8 @@ p, li, span {
   flex-wrap: wrap;
   align-items: center; }
 
-    /* .ul_li,
-    .ul_li_right, */
+    .ul_li,
+    .ul_li_right,
     .ul_li_center,
     .ul_li_between__footer {
       margin: 0px;
@@ -3019,7 +3019,7 @@ h6 {
     background-image: url(../img/icon/btn-border.svg); }
 
 .btc-btn {
-  background-color: #DAEDF8;
+  background-color: #a1b1b9;
   display: inline-block;
   padding: 12px 35px;
   padding-right: 100px;
@@ -3076,7 +3076,7 @@ h6 {
   background-color: #0B1121; }
   .home-bitcoin h1, .home-bitcoin h2, .home-bitcoin h3, .home-bitcoin h4, .home-bitcoin h5, .home-bitcoin h6 {
     line-height: 1.1;
-    color: #DAEDF8; }
+    color: #A4BDCC; }
   .home-bitcoin p {
     color: #A4BDCC; }
 
