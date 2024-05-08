@@ -337,9 +337,7 @@ p, li, span {
   flex-wrap: wrap;
   align-items: center; }
 
-    .ul_li,
-    .ul_li_right,
-    .ul_li_center,
+
     .ul_li_between__footer {
       margin: 0px;
       padding: 0px;
@@ -347,7 +345,7 @@ p, li, span {
       align-items: center;
       flex-flow: column;
     }
-        .footer__social {
+    .footer__social {
           display: inline-block;
         }
 
@@ -7444,13 +7442,11 @@ blockquote {
 
 .event-text {
  
-  font-size: 16px;
+  font-size: 11px;
   font-weight: 600;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  @media (max-width: 767px) {
-    font-size: 14px;
-  }
+  padding-top: 3px;
+  padding-bottom: 3px;
+  
 }
 
 .event-icon {
