@@ -337,6 +337,20 @@ p, li, span {
   flex-wrap: wrap;
   align-items: center; }
 
+    /* .ul_li,
+    .ul_li_right, */
+    .ul_li_center,
+    .ul_li_between__footer {
+      margin: 0px;
+      padding: 0px;
+      display: flex;
+      align-items: center;
+      flex-flow: column;
+    }
+        .footer__social {
+          display: inline-block;
+        }
+
 .ul_li > li, .ul_li_right > li, .ul_li_center > li, .ul_li_between > li {
   float: left;
   list-style: none;
@@ -2437,6 +2451,81 @@ h6 {
       .header__language .dropdown-menu .dropdown-item img {
         width: 20px;
         margin-right: 7px; }
+                /* en */
+                .header__language__en button {
+                  min-width: 163px;
+                  height: 50px;
+                  background-color: transparent;
+                  color: var(--color-white);
+                  font-size: 14px;
+                  font-weight: 700;
+                  border: 1px solid rgba(255, 255, 255, 0.08);
+                  text-transform: uppercase;
+                  border-radius: 5px;
+                  -webkit-border-radius: 5px;
+                  -moz-border-radius: 5px;
+                  -ms-border-radius: 5px;
+                  -o-border-radius: 5px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                }
+        
+                .header__language__en button img {
+                  margin-right: 10px;
+                }
+        
+                .header__language__en button i {
+                  width: 24px;
+                  height: 24px;
+                  border-radius: 50%;
+                  -webkit-border-radius: 50%;
+                  -moz-border-radius: 50%;
+                  -ms-border-radius: 50%;
+                  -o-border-radius: 50%;
+                  margin-left: 18px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  color: var(--color-white);
+                  font-size: 10px;
+                  border: 1px solid #242443;
+                  background: #141437;
+                }
+        
+                .header__language__en button:after {
+                  display: none;
+                }
+        
+                .header__language__en .dropdown-menu {
+                  background: #151534;
+                  top: 100% !important;
+                  -webkit-animation-duration: 0.3s;
+                  animation-duration: 0.3s;
+                  -webkit-animation-fill-mode: both;
+                  animation-fill-mode: both;
+                  -webkit-animation-name: lngslideUpIn;
+                  animation-name: lngslideUpIn;
+                }
+        
+                .header__language__en .dropdown-menu .dropdown-item {
+                  color: var(--color-white);
+                  padding: 5px 20px;
+                  display: flex;
+                  align-items: center;
+                  text-transform: uppercase;
+                  font-size: 14px;
+                }
+        
+                .header__language__en .dropdown-menu .dropdown-item:focus,
+                .header__language__en .dropdown-menu .dropdown-item:hover {
+                  background-color: var(--color-primary);
+                }
+        
+                .header__language__en .dropdown-menu .dropdown-item img {
+                  width: 20px;
+                  margin-right: 7px;
+                }
 .header--transparent {
   position: absolute;
   left: 0;
@@ -2536,16 +2625,16 @@ h6 {
   .blockchain-header .stricked-menu {
     background-color: #0B0E13; }
   .blockchain-header .header__main-wrap {
-    padding: 0 90px; }
+    padding: 0 0; }
     @media only screen and (min-width: 1200px) and (max-width: 1500px) {
       .blockchain-header .header__main-wrap {
-        padding: 0 10px; } }
+        padding: 0 0; } }
     @media (max-width: 1199px) {
       .blockchain-header .header__main-wrap {
         padding: 0; } }
     @media (max-width: 991px) {
       .blockchain-header .header__main-wrap {
-        padding: 12px 0; } }
+        padding: 0 0; } }
   .blockchain-header .header__bar {
     background-color: #1f252e; }
   .blockchain-header .main-menu ul li a::before {
@@ -6347,7 +6436,7 @@ blockquote {
     width: 100%;
     opacity: 0; }
   .solution__list li::after {
-    background-color: #15B785;
+    background-color: #bf659b;
     width: 0; }
   .solution__list li .icon {
     position: absolute;
@@ -7338,8 +7427,6 @@ blockquote {
     z-index: 11; */
     z-index: 999;
   }
-
-
 .container {
   margin: 0 auto;
   padding: 0 15px;
@@ -7357,8 +7444,10 @@ blockquote {
 
 .event-text {
  
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
+  padding-top: 2px;
+  padding-bottom: 2px;
   @media (max-width: 767px) {
     font-size: 14px;
   }
