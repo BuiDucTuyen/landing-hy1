@@ -6756,20 +6756,20 @@ blockquote {
 #xb-loadding.xb-loader.style-2 {
   background-color: #0B1121; }
   #xb-loadding.xb-loader.style-2 .honeycomb div {
-    background: #15B785; }
+    background: #a377a0; }
     #xb-loadding.xb-loader.style-2 .honeycomb div::before {
-      border-top-color: #15B785; }
+      border-top-color: #a377a0; }
     #xb-loadding.xb-loader.style-2 .honeycomb div::after {
-      border-bottom-color: #15B785; }
+      border-bottom-color: #a377a0; }
 
 #xb-loadding.xb-loader.style-3 {
   background-color: #0B1121; }
   #xb-loadding.xb-loader.style-3 .honeycomb div {
-    background: #45ACAB; }
+    background: #a377a0; }
     #xb-loadding.xb-loader.style-3 .honeycomb div::before {
-      border-top-color: #45ACAB; }
+      border-top-color: #a377a0; }
     #xb-loadding.xb-loader.style-3 .honeycomb div::after {
-      border-bottom-color: #45ACAB; }
+      border-bottom-color: #a377a0; }
 
 @-webkit-keyframes honeycomb {
   0%,
