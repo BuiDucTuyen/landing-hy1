@@ -4314,7 +4314,7 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::before, body .mfp-w
     height: 60px;
     align-items: center;
     padding-left: 20px;
-    background-image: url(../img/shape/t_data_bg.png);
+    /* background-image: url(../img/shape/t_data_bg.png); */
     background-repeat: no-repeat;
     font-size: 16px;
     font-weight: 400;
@@ -4330,7 +4330,8 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::before, body .mfp-w
   @media (max-width: 767px) {
     .token-distribution__content {
       padding: 30px 30px;
-      background: #0b0e13;
+      margin-right: -22px;
+        padding-right: 150px;
       margin-right: 0; } }
 .token-distribution__bg {
   position: absolute;
