@@ -4,8 +4,8 @@
 <path d="M180 60H166L180 46V60Z" fill="url(#paint2_linear_1309_222)"/>
 <defs>
 <linearGradient id="paint0_linear_1309_222" x1="6.0488e-07" y1="21.7323" x2="180.047" y2="29.0777" gradientUnits="userSpaceOnUse">
-<stop stop-color="#c75f9a"/>
-<stop offset="1" stop-color="#1799b3"/>
+<stop stop-color="#ed008e"/>
+<stop offset="1" stop-color="#ed008e"/>
 </linearGradient>
 <linearGradient id="paint1_linear_1309_222" x1="4.70463e-08" y1="5.07087" x2="14.0244" y2="5.26158" gradientUnits="userSpaceOnUse">
 <stop stop-color="#c75f9a"/>

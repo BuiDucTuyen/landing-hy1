@@ -3727,23 +3727,76 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::before, body .mfp-w
     .hero__blockchain-icon .icon--1 {
       top: auto;
       bottom: -135px; } }
+   @media (max-width: 499px)  {
+       .hero__blockchain-icon .icon--1 {
+         top: 20px;
+         left: -40px;
+       }
+
+     }
 .hero__blockchain-icon .icon--2 {
   bottom: -207px;
   left: 4%; }
+     @media only screen and (min-width: 1200px) and (max-width: 1500px) {
+       .hero__blockchain-icon .icon--2 {
+         top: 50px;
+         left: -20px;
+       }
+     }
+  
+     @media (max-width: 1199px) {
+       .hero__blockchain-icon .icon--2 {
+        top: 80px;
+         left: 0;
+       }
+     }
+  
+     @media (max-width: 991px) {
+       .hero__blockchain-icon .icon--2 {
+         top: 100px;
+         left: 50px;
+       }
+     }
+  
+     @media (max-width: 499px) {
+       .hero__blockchain-icon .icon--2 {
+         top: 90px;
+         left: -40px;
+       }
+  
+     }
 .hero__blockchain-icon .icon--3 {
   top: -188px;
   right: -43%; }
-  @media only screen and (min-width: 1200px) and (max-width: 1500px) {
-    .hero__blockchain-icon .icon--3 {
-      top: -170px;
-      right: 0; } }
-  @media (max-width: 1199px) {
-    .hero__blockchain-icon .icon--3 {
-      right: 0; } }
-  @media (max-width: 991px) {
-    .hero__blockchain-icon .icon--3 {
-      top: auto;
-      bottom: -100px; } }
+    @media only screen and (min-width: 1200px) and (max-width: 1500px) {
+      .hero__blockchain-icon .icon--3 {
+        top: -100px;
+          right: 100px;
+      }
+    }
+  
+    @media (max-width: 1199px) {
+      .hero__blockchain-icon .icon--3 {
+        top: -70px;
+        left: 150px;
+      }
+    }
+  
+    @media (max-width: 991px) {
+      .hero__blockchain-icon .icon--3 {
+        top: auto;
+          bottom: -135px;
+          left: 300px;
+      }
+    }
+  
+    @media (max-width: 499px) {
+      .hero__blockchain-icon .icon--3 {
+        top: 20px;
+        left: 140px;
+      }
+  
+    }
 .hero__blockchain-icon .icon--4 {
   bottom: -222px;
   right: -24%; }
@@ -3767,7 +3820,34 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::before, body .mfp-w
 @media (max-width: 767px) {
   .blockchain-hero__content .title {
     font-size: 40px; } }
+@media only screen and (min-width: 1200px) and (max-width: 1500px) {
+  .hero__blockchain-icon .icon--4 {
+    top: 200px;
+      right: 100px;
+  }
+}
 
+@media (max-width: 1199px) {
+  .hero__blockchain-icon .icon--4 {
+    right: 20px;
+    top: 160px;
+  }
+}
+
+@media (max-width: 991px) {
+  .hero__blockchain-icon .icon--4 {
+    top: 80px;
+      left: 320px;
+  }
+}
+
+@media (max-width: 499px) {
+  .hero__blockchain-icon .icon--4 {
+    top: 80px;
+      left: 170px;
+  }
+
+}
 @keyframes scrollDown {
   0% {
     transform: translate(-50%, 0px);
@@ -7302,7 +7382,12 @@ blockquote {
 .footer__newsletter-form {
   max-width: 650px;
   width: 100%;
-  position: relative; }
+  position: relative; 
+     @media (max-width: 575px) {
+      max-width: 400px;
+     }
+  
+  }
   .footer__newsletter-form input {
     height: 60px;
     width: calc(100% - 215px);
@@ -7326,8 +7411,10 @@ blockquote {
     @media (max-width: 767px) {
       .footer__newsletter-form input {
         width: 100%;
-        background-position: center center;
+        padding: 0 10px;
+        background-position: center ;
         margin-bottom: 10px; } }
+
   .footer__newsletter-form button {
     background-color: transparent;
     position: absolute;
@@ -7340,8 +7427,13 @@ blockquote {
       background-image: url(../img/bg/sb_btn_bg-hover.svg); }
     @media (max-width: 767px) {
       .footer__newsletter-form button {
-        position: unset;
-        margin-top: 10px; } }
+        position: relative;
+        margin-top: 20px; 
+        left: 25%;
+        height: 55px;
+        }
+      } 
+        
 .footer__btc-social span {
   font-size: 12px;
   color: #A4BDCC;
@@ -7484,6 +7576,14 @@ justify-content: center;
     @media (max-width: 991px) {
       padding: 10px 10px 10px  ;
 }
+}
+
+.footer__widget_1 {
+  @media (max-width: 755px) {
+    display: flex ;
+  justify-content: center;
+  }
+  
 }
 @tailwind base;
 @tailwind components;
