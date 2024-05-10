@@ -879,34 +879,29 @@ development, marketing, user rewards, and reserves. </p>
     </div>
     <script>
         // Light - Dart
-        const toggleSwitch = document.querySelector(
-        '#home .header__main .header__action .theme-switch-wrapper .theme-switch input[type="checkbox"]'
-      );
+        const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+        const currentTheme = localStorage.getItem('theme');
 
-    //   console.log(toggleSwitch,'>>>>>>>>>>>>>>>>>>>toggleSwitch')
-      const currentTheme = localStorage.getItem("theme");
-      console.log(currentTheme,'>>>>>>>>>header__main-wrap strickyheader__main-wrap stricky')
-      if (currentTheme) {
-        document.documentElement.setAttribute("data-theme", currentTheme);
+       if (currentTheme) {
+       document.documentElement.setAttribute('data-theme', currentTheme);
+  
+       if (currentTheme === 'dark') {
+        toggleSwitch.checked = true;
+    }
+}
 
-        if (currentTheme === "light") {
-          toggleSwitch.checked = true;
-        }
-      }
+function switchTheme(e) {
+    if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+    }
+    else {        document.documentElement.setAttribute('data-theme', 'light');
+          localStorage.setItem('theme', 'light');
+    }    
+}
 
-      function switchTheme(e) {
-        if (e.target.checked) {
-          document.documentElement.setAttribute("data-theme", "light");
-          localStorage.setItem("theme", "light");
-        } else {
-          document.documentElement.setAttribute("data-theme", "dark");
-          localStorage.setItem("theme", "dark");
-        }
-      }
-
-      toggleSwitch.addEventListener("change", switchTheme, false);
-
-
+toggleSwitch.addEventListener('change', switchTheme, false);
+      // End Light - Dark
         // chart
             am4core.ready(function () {
 

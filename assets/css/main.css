@@ -47,22 +47,27 @@
   --color-primary: #3C12D4;
   --gradient-color-from: #45ACAB;
   --gradient-color-to: #4788AC;
-  --color-white: #fff;
+  --color-white: #0F1928;
   --color-black: #000;
   --color-default: #B3B3C0;
   --color-dark: #0F1928;
-  --color-gray: #eeedef; }
+  --color-gray: #eeedef;
+  --color-target: #ccc; 
+  --bg-color:#fff
+}
 
 /* reset css start */
 html {
   scroll-behavior: smooth; 
 }
 
-  [data-theme="light"] {
+  [data-theme="dark"] {
     --primary-color: #9A97F3;
     --secondary-color: #818cab;
     --font-color: #e1e1ff;
-    --bg-color: #fff;
+    --color-white: #fff;
+    --color-target: #fff;
+    --bg-color: #0B0E13;
     --heading-color: #818cab;
   }
 
@@ -75,7 +80,8 @@ body {
   font-size: 16px;
   line-height: 26px;
   color: var(--color-default);
-  background-color: #0B0B29; }
+  background-color: var(--bg-color); 
+}
 
 img {
   max-width: 100%;
@@ -182,14 +188,16 @@ p, li, span {
 /* global css end */
 .body_wrap {
   overflow: hidden;
-  position: relative; }
+  position: relative; 
+}
 
 .bg_img {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 100%; }
+  height: 100%; 
+}
 
 .footer-bg {
   background-color: #04060A; }
@@ -2539,7 +2547,8 @@ h6 {
   top: 0;
   right: 0;
   width: 100%;
-  z-index: 11; }
+  z-index: 11; 
+}
 /* .header__action .login {
   background-color: #182335;
   text-transform: uppercase;
@@ -2627,8 +2636,10 @@ h6 {
       margin-left: 20px; } }
 
 .blockchain-header {
-  background-color: #0B0E13;
-  box-shadow: 0px 8px 77px 0px rgba(0, 0, 0, 0.71); }
+  /* background-color: #0B0E13; */
+  background-color: var(--bg-color);
+  box-shadow: 0px 8px 77px 0px rgba(0, 0, 0, 0.71); 
+}
   .blockchain-header .stricked-menu {
     background-color: #0B0E13; }
   .blockchain-header .header__main-wrap {
@@ -2655,24 +2666,33 @@ h6 {
     .blockchain-header .stricked-menu .main-menu ul li a {
       padding: 30px 10px; } }
   .blockchain-header .main-menu ul li .submenu {
-    background: #11151a; }
+    background: #11151a; 
+  }
+
   .blockchain-header__account {
-    position: relative; }
+    position: relative; 
+  }
     @media (max-width: 991px) {
       .blockchain-header__account {
-        display: none; } }
+        display: none; 
+      } }
+
     .blockchain-header__account a {
       font-size: 14px;
       font-weight: 600;
       letter-spacing: 1.4px;
-      color: var(--color-white);
-      padding: 13px 27px; }
+      color: var(--color-target);
+      padding: 13px 27px; 
+    }
       .blockchain-header__account a::before {
-        background-image: url(../img/bg/hd_btn_bg.svg); }
+        background-image: url(../img/bg/hd_btn_bg.svg); 
+      }
       .blockchain-header__account a::after {
-        background-image: url(../img/bg/hd_btn_bg-hover.svg); }
+        background-image: url(../img/bg/hd_btn_bg-hover.svg); 
+      }
       .blockchain-header__account a i {
-        margin-right: 10px; }
+        margin-right: 10px; 
+      }
   .blockchain-header__language {
     margin-right: 40px; }
     @media (max-width: 1199px) {
@@ -2795,9 +2815,11 @@ h6 {
 .main-menu {
   display: flex;
   align-items: center;
-  flex-grow: 1; }
+  flex-grow: 1; 
+}
   .main-menu__wrap {
-    position: static; }
+    position: static; 
+  }
   .main-menu ul {
     display: -ms-flexbox;
     display: flex;
@@ -3059,9 +3081,12 @@ h6 {
       color: var(--color-white); }
 
 .btns {
-  margin: -12px; }
+  margin: -12px; 
+}
   .btns a {
-    margin: 12px; }
+    margin: 12px; 
+    color: var(--color-target);
+  }
 
 /*----------------------------------------*/
 /*  03. globel
@@ -3073,7 +3098,8 @@ h6 {
   max-width: 1640px; }
 
 .home-blockchain {
-  background-color: #03050E; }
+  background-color: #03050E; 
+}
   .home-blockchain h1, .home-blockchain h2, .home-blockchain h3, .home-blockchain h4, .home-blockchain h5, .home-blockchain h6 {
     font-family: 'Titillium Web', sans-serif;
     line-height: 1.1;
@@ -3825,10 +3851,12 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::before, body .mfp-w
 
 @media (max-width: 1199px) {
   .blockchain-hero__content .title {
-    font-size: 60px; } }
+    font-size: 60px; 
+  } }
 @media (max-width: 767px) {
   .blockchain-hero__content .title {
-    font-size: 40px; } }
+    font-size: 40px; 
+  } }
 @media only screen and (min-width: 1200px) and (max-width: 1500px) {
   .hero__blockchain-icon .icon--4 {
     top: 200px;
