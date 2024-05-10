@@ -55,7 +55,16 @@
 
 /* reset css start */
 html {
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth; 
+}
+
+  [data-theme="light"] {
+    --primary-color: #9A97F3;
+    --secondary-color: #818cab;
+    --font-color: #e1e1ff;
+    --bg-color: #fff;
+    --heading-color: #818cab;
+  }
 
 body {
   padding: 0;
@@ -7599,11 +7608,13 @@ justify-content: center;
   background-repeat:   no-repeat;
   background-position: center center;  
   width: 100px;
-  height: 20px;   
+  height: 40px;   
+  background-color: #000;
+  
 }
 .bg-dark {
   background-image: url("../img/light-dark/bg-dark.png");
-  background-color: #cccccc;
+ 
 }
 
 /*slider switch css */
@@ -7628,8 +7639,8 @@ justify-content: center;
 }
 
 .slider {
-  /* background-color: #ccc; */
-  bottom: 0;
+  background-color: #ccc;
+  /* bottom: 0; */
   cursor: pointer;
   left: 0;
   position: absolute;
@@ -7664,19 +7675,6 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -7750,6 +7748,68 @@ g[fill-opacity] {
     height: 70px;
   }
 }
+
+/*Light - Dark*/
+
+/*slider switch css */
+.theme-switch-wrapper {
+   display: flex; 
+   align-items: center;
+  
+   em {
+    margin-left: 10px;
+    font-size: 1rem;
+  } 
+}
+ .theme-switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 70px;
+} 
+
+ .theme-switch input {
+  display:none;
+} 
+
+.slider {
+  background-color: rgb(114, 120, 131);
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+  margin-right: 5px;
+}
+.slider:before { 
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 26px;
+ }
+
+ input:checked + .slider {
+  background-color: #fff;
+} 
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+  background-color: rgb(114, 120, 131);
+}
+
+.slider.round {
+   border-radius: 34px; 
+}
+
+ .slider.round:before {
+  border-radius: 50%;
+} 
 
 @tailwind base;
 @tailwind components;
