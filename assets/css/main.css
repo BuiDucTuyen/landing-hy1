@@ -102,8 +102,6 @@ html {
         --bg-logoo: url('/assets/img/icon/badge_active.svg');
         --bg-our: #0a0d12;
         }
-      }
-  }
 
 body {
   padding: 0;
@@ -227,6 +225,7 @@ p, li, span {
 
 .bg_img {
   background-image: var(--bg-home);
+  background-repeat: no-repeat;
 }
 
 .footer-bg {
@@ -3843,10 +3842,18 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::before, body .mfp-w
     @media only screen and (min-width: 1200px) and (max-width: 1500px) {
       .hero__blockchain-icon .icon--3 {
         top: -100px;
-          right: 100px;
+          right: -50px;
       }
     }
-  
+   
+    @media screen and (max-with:1500) {
+      .hero__blockchain-icon .icon--3 {
+        top: 90px;
+        right: -40px;
+      }
+    }
+
+
     @media (max-width: 1199px) {
       .hero__blockchain-icon .icon--3 {
         top: -70px;
@@ -7737,6 +7744,16 @@ justify-content: center;
   top: 0;
   transition: .4s;
 }
+ .slider {
+  background-color: #ccc;
+  /* bottom: 0; */
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
 
 .slider:before {
   /* background-color: #fff; */
@@ -8152,4 +8169,73 @@ input:checked + .slider:before {
 .image {
   width: 24px;
   height: 24px;
+}
+
+.button__togle {
+  position: absolute;
+  top: 45px;
+  right: 250px;
+}
+
+
+/*  */
+
+.box-switch {
+  --bg: #fff;
+  --text: #000;
+  color: var(--text);
+  width: 100px;
+  height: 40px;
+  background: var(--light);
+  border-radius: 30px;
+  position: relative;
+}
+.box-switch .switch {
+  background: #fff;
+  width: 30px;
+  height: 30px;
+  background: var(--bg);
+  border-radius: 100%;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  transition: 0.5s all ease;
+}
+.navigation {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+.navigation > li {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.navigation > li > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--text);
+  font-size: 20px;
+  transition: 0.3s color ease;
+}
+.navigation > li > a:hover {
+  color: var(--light);
+}
+.light {
+  --bg: #cc9dff;
+  --text: #222;
+  background: var(--bg);
+}
+.light .box-switch {
+  background: var(--text);
+}
+.light .box-switch .switch {
+  transform: translateX(60px);
+}
+.light .navigation > li > a {
+  color: var(--text);
+}
+.light .navigation > li > a:hover {
+  color: #220244;
 }

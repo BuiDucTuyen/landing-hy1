@@ -37,7 +37,6 @@
             <div></div>
         </div>
     </div>
-
    <div class="progress-wrap style-2">
     <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
         <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" fill="#c75f9a"/>
@@ -84,12 +83,24 @@
                         </div>
                                 
                         <div class="header__action ul_li">
-                           <div class="theme-switch-wrapper">
-                                  <label class="theme-switch" for="checkbox">
-                                    <input type="checkbox" id="checkbox" />
+                            <!-- <div class="theme-switch-wrapper">
+                                <label class="theme-switch" for="checkbox">
+                                  <input type="checkbox" id="checkbox" />
+                                  <div class="slider round"></div>
+                                </label>
+                          </div> -->
+                            <div class="theme-switch-wrapper">
+                                 <label class="theme-switch">
+                                <input type="checkbox" id="checkbox">
+                                <!-- <span class="slider round"> -->
                                     <div class="slider round"></div>
-                                  </label>
+                                <!-- </span> -->
+                              </label>
+                           
                             </div>
+                           
+                            <!-- </div> -->
+                          
                             <div class="d-lg-none">
                                 <a class="header__bar hamburger_menu" href="javascript:void(0);">
                                     <div class="header__bar-icon">
@@ -905,13 +916,22 @@ development, marketing, user rewards, and reserves. </p>
     <script>
         // Light - Dart
         const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-        const currentTheme = localStorage.getItem('theme');
+        
+        const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+
+if (currentTheme) {
+    document.documentElement.setAttribute('data-theme', currentTheme);
+
+    if (currentTheme === 'dark') {
+        toggleSwitch.checked = true;
+    }
+}
 
        if (currentTheme) {
        document.documentElement.setAttribute('data-theme', currentTheme);
-  
        if (currentTheme === 'dark') {
         toggleSwitch.checked = true;
+        // toggleSwitchMenu.checked = true;
     }
 }
 
@@ -924,7 +944,7 @@ function switchTheme(e) {
         localStorage.setItem('theme', 'light');
     }    
 }
-
+// toggleSwitchMenu.addEventListener('change', switchTheme, false);
 toggleSwitch.addEventListener('change', switchTheme, false);
       // End Light - Dark
         // chart
@@ -982,9 +1002,6 @@ toggleSwitch.addEventListener('change', switchTheme, false);
                
                 // let lineSeries = chart.series.push(new am4maps.MapLineSeries());
                 // series.mapLines.template.stroke = am4core.color("#e03e96");
-
-
-                console.log(series, '>>>>>>>>>series')
                 series.dataFields.value = "litres";
                 series.dataFields.depthValue = "litres";
                 series.dataFields.category = "country";
