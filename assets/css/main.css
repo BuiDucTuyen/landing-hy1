@@ -64,6 +64,8 @@
   --bg-home: url('/assets/img/icon/Frame 121872.png');
   --bg-border1: url('/assets/img/icon/Vector.svg');
   --bg-border2: url('/assets/img/icon/btn-border-hover 2.png');
+  --bg-border3: url('/assets/img/icon/btn-border-hover 2.png');
+  --color-dark1: #babcc0;
 }
 
 /* reset css start */
@@ -89,6 +91,8 @@ html {
      --bg-home: url('/assets/img/bg/blockchain_hero_bg.png');
     --bg-border1: url('/assets/img/icon/btn-border-white.svg');
       --bg-border2: url('/assets/img/icon/btn-border.svg');
+      --color-dark1: #252527;
+        --bg-border3: url('/assets/img/icon/btn-border-hover 2.png');
       }
   }
 
@@ -2586,7 +2590,6 @@ h6 {
 .header__bar {
   width: 50px;
   height: 50px;
-  background-color: #182335;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2601,7 +2604,7 @@ h6 {
     right: 0;
     width: 100%;
     height: 2px;
-    background-color: #DAEDF8;
+    background-color: var(--color-white);
     border-radius: 48px;
     -webkit-border-radius: 48px;
     -moz-border-radius: 48px;
@@ -2673,7 +2676,7 @@ h6 {
       .blockchain-header .header__main-wrap {
         padding: 0 0; } }
   .blockchain-header .header__bar {
-    background-color: #1f252e; }
+    background-color: var(--bg-main); }
   .blockchain-header .main-menu ul li a::before {
     display: none; }
   .blockchain-header .main-menu ul li a {
@@ -2704,10 +2707,10 @@ h6 {
       padding: 13px 27px; 
     }
       .blockchain-header__account a::before {
-        background-image: url(../img/bg/hd_btn_bg.svg); 
+        background-image: var(--bg-border3); 
       }
       .blockchain-header__account a::after {
-        background-image: url(../img/bg/hd_btn_bg-hover.svg); 
+        background-image: var(--bg-border); 
       }
       .blockchain-header__account a i {
         margin-right: 10px; 
@@ -3046,7 +3049,7 @@ h6 {
     width: 100%;
     height: 100%;
     content: "";
-    background-image: var(--bg-border);
+    background-image: var(--bg-border2);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -3774,7 +3777,7 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::before, body .mfp-w
   transform: translate(32px, -10px); }
 .hero__blockchain-icon .icon--1 {
   top: -176px;
-  left: 25%; }
+  left: 1%; }
   @media only screen and (min-width: 1200px) and (max-width: 1500px) {
     .hero__blockchain-icon .icon--1 {
       top: -170px;
@@ -3794,7 +3797,7 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::before, body .mfp-w
 
      }
 .hero__blockchain-icon .icon--2 {
-  bottom: -207px;
+  bottom: -250px;
   left: 4%; }
      @media only screen and (min-width: 1200px) and (max-width: 1500px) {
        .hero__blockchain-icon .icon--2 {
@@ -3826,7 +3829,8 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::before, body .mfp-w
      }
 .hero__blockchain-icon .icon--3 {
   top: -188px;
-  right: -43%; }
+  right: -0%;
+   }
     @media only screen and (min-width: 1200px) and (max-width: 1500px) {
       .hero__blockchain-icon .icon--3 {
         top: -100px;
@@ -4689,7 +4693,8 @@ border-radius: 30px;
 .roadmap__list-box {
   top: 0;
   position: relative;
-  width: 50%; }
+  width: 50%;
+ }
   @media (max-width: 767px) {
     .roadmap__list-box {
       width: 100%; } }
@@ -4766,7 +4771,7 @@ margin-right: 100px;
     .roadmap__list-inner {
       max-width: 330px;
       min-height: 360px;
-      background: #0b0e13;
+      background: var(--bg--radius);
       padding: 44px 54px;
     margin-right: 0px; } }
             
@@ -4813,7 +4818,7 @@ margin-right: 100px;
       width: 10px;
       height: 2px;
       content: "";
-      background-color: #fff; }
+      background-color: var(--color-white); }
     .roadmap__list-inner ul li:not(:last-child) {
       margin-bottom: 5px; }
   .roadmap__list-inner .icon {
@@ -4829,7 +4834,7 @@ margin-right: 100px;
       right: -75px;
       width: 10px;
       height: 10px;
-      background-color: #fff;
+      background-color: var(--color-white);
       content: "";
       border-radius: 50%;
       -webkit-border-radius: 50%;
@@ -5445,14 +5450,16 @@ margin-right: 100px;
 .brand__wrap {
   padding: 115px 95px;
   padding-top: 110px;
-  position: relative; }
+  position: relative; 
+background-color: #0B0E13;
+border-radius: 30px;}
   @media (max-width: 1200px) {
     .brand__wrap {
       padding: 98px 95px;
       padding-top: 86px; } }
   @media (max-width: 767px) {
     .brand__wrap {
-      padding: 0; } }
+      padding: 28px 30px; } }
   /* .brand__wrap::before, .brand__wrap::after {
     position: absolute;
     top: 29px;
@@ -6601,7 +6608,7 @@ border-radius: 30px;
       left: 0;
       width: 30px;
       height: 30px;
-      background-color: #262932;
+      background-color: var(--color-dark1);
       border-radius: 50%;
       -webkit-border-radius: 50%;
       -moz-border-radius: 50%;
@@ -7219,11 +7226,10 @@ border-radius: 30px;
     @media (max-width: 767px) {
       .sec-title__title.text-50 {
         font-size: 32px; } }
-.sec-title p {
-  font-weight: 400; }
-  .sec-title p.text-20 {
-    
-    font-size: 20px; }
+  .sec-title p {
+    color: white;
+    font-size: 20px; 
+  font-weight: 400;}
 .sec-title.style2 p {
   font-size: 18px;
   color: var(--color-white);
@@ -8126,4 +8132,7 @@ input:checked + .slider:before {
   100% {
     transform: scale(1);
   }
+}
+.content1 {
+  color: var(--color-white);
 }
