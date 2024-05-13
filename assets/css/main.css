@@ -58,6 +58,12 @@
   --polyline-color: #000;
   --bg--radius: #ffffff;
   --bg--logo: #C8F6FF;
+  --bg--li: #000000;
+  --bg-ft: url('/assets/img/icon/Layer_1 (2).png');
+  --bg-border: url('/assets/img/icon/Vector (1).png');
+  --bg-home: url('/assets/img/icon/Frame 121872.png');
+  --bg-border1: url('/assets/img/icon/Vector.svg');
+  --bg-border2: url('/assets/img/icon/btn-border-hover 2.png');
 }
 
 /* reset css start */
@@ -77,6 +83,13 @@ html {
     --polyline-color: #fff;
     --bg--radius: #0B0E13;
     --bg--logo: #0B0E13;
+    --bg--li : #B3B3C0;
+    --bg-ft: url('/assets/img/bg/footer_bg2.jpg');
+    --bg-border: url('/assets/img/icon/btn-border.svg');
+     --bg-home: url('/assets/img/bg/blockchain_hero_bg.png');
+    --bg-border1: url('/assets/img/icon/btn-border-white.svg');
+      --bg-border2: url('/assets/img/icon/btn-border.svg');
+      }
   }
 
 body {
@@ -200,11 +213,7 @@ p, li, span {
 }
 
 .bg_img {
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%; 
+  background-image: var(--bg-home);
 }
 
 .footer-bg {
@@ -3037,7 +3046,7 @@ h6 {
     width: 100%;
     height: 100%;
     content: "";
-    background-image: url(../img/icon/btn-border.svg);
+    background-image: var(--bg-border);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -3046,7 +3055,7 @@ h6 {
     -o-transition: 0.3s;
     transition: 0.3s; }
   .blc-btn::after {
-    background-image: url(../img/icon/btn-border-hover.svg);
+    background-image: var(--bg-border);
     opacity: 0; }
   .blc-btn:hover {
     transform: translateY(-2px);
@@ -3054,9 +3063,9 @@ h6 {
     .blc-btn:hover::after {
       opacity: 1; }
   .blc-btn--white::before {
-    background-image: url(../img/icon/btn-border-white.svg); }
+    background-image: var(--bg-border1) }
   .blc-btn--white::after {
-    background-image: url(../img/icon/btn-border.svg); }
+    background-image: var(--bg-border2) }
 
 .btc-btn {
   background-color: #a1b1b9;
@@ -3412,6 +3421,7 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::before, body .mfp-w
       -ms-transform: translateY(30px);
       transform: translateY(30px); } }
   .hero__bitcoin-content .title {
+    color: var(--color-white);
     font-size: 102px;
     line-height: 1.1;
     margin-bottom: 40px;
@@ -3862,7 +3872,12 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::before, body .mfp-w
   @media (max-width: 991px) {
     .hero__blockchain-icon .icon--4 {
       bottom: -208px; } }
-
+ .blockchain-hero__content .title {
+  color: var(--color-white);
+ }
+    .blockchain-hero__content .p {
+      color: var(--bg--li);
+    }
 @media (max-width: 1199px) {
   .blockchain-hero__content .title {
     font-size: 60px; 
@@ -4691,7 +4706,7 @@ border-radius: 30px;
       position: relative;
       margin-bottom: 0;
       padding-right: 133px;
-background-color: #0b0e13;
+background-color: var(--bg--radius);
       margin-right: -50px; }
       @media (max-width: 991px) {
         .roadmap__list-box:nth-child(even) .roadmap__list-inner {
@@ -4743,7 +4758,7 @@ background-color: #0b0e13;
 .roadmap__list-inner {
   max-width: 500px;
   min-height: 350px;
-background-color: #0b0e13;
+background-color: var(--bg--radius);
 border-radius: 30px;
 margin-right: 100px;
   padding: 44px 70px; }
@@ -4783,9 +4798,10 @@ margin-right: 100px;
     line-height: 35px;
     letter-spacing: -0.22px;
     margin-bottom: 25px;
-    font-weight: 600; }
+    font-weight: 600; 
+  color: var(--color-white);}
   .roadmap__list-inner ul li {
-    color: #B3B3C0;
+    color: var(--bg--li);
     position: relative; }
     .roadmap__list-inner ul li::before {
       position: absolute;
@@ -5479,7 +5495,7 @@ margin-right: 100px;
   left: -35px;
   width: 105%;
   height: 100%;
-background-color: var(--bg--logo);
+background-color: #0B0E13;
 border-radius: 30px;
   content: "";
   z-index: -1; }
@@ -7245,6 +7261,7 @@ border-radius: 30px;
   font-size: 24px;
   margin-bottom: 38px; }
 .footer__widget h3 {
+  color: var(--color-white);
   font-size: 18px;
   font-weight: 600;
   line-height: 1.2;
@@ -7349,8 +7366,8 @@ border-radius: 30px;
 .footer__copyright-inner {
   padding: 15px 0;
   padding-top: 0; }
-.footer__copyright-text {
-  color: #0B0B29;
+.footer__copyright-text_1 {
+  color: var(--color-white);
   font-weight: 500; }
 .footer__links li:not(:last-child) {
   margin-right: 29px; }
@@ -7393,6 +7410,7 @@ border-radius: 30px;
     font-weight: 700;
     text-transform: uppercase;
     background-color: #0B0E13;
+    color: white;
     padding: 10px 30px;
     border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -7485,6 +7503,7 @@ border-radius: 30px;
   .footer__newsletter-form button {
     background-color: transparent;
     position: absolute;
+    color: white;
     top: 0;
     right: 0;
     height: 60px; }
@@ -7775,7 +7794,10 @@ g[aria-labelledby] {
   background-color: red !important;
  }
 
-
+.texx-logo {
+  color: var(--color-white);
+  font-weight: 500;
+}
 
 g[fill-opacity] {
  color: #00D89E !important;
@@ -8075,7 +8097,9 @@ input:checked + .slider:before {
     opacity: 0.1;
   }
 }
-
+.bg-ft {
+  background-image: var(--bg-ft) ;
+}
 
 .imgage:before,
 .imgage:after {
