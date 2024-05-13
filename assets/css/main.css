@@ -57,7 +57,7 @@
   --bg-main:#EFFCFC;
   --polyline-color: #000;
   --bg--radius: #ffffff;
-  --bg--logo: #C8F6FF;
+  --bg--logo: #ffffff;
   --bg--li: #000000;
   --bg-ft: url('/assets/img/icon/Layer_1 (2).png');
   --bg-border: url('/assets/img/icon/Vector (1).png');
@@ -66,6 +66,10 @@
   --bg-border2: url('/assets/img/icon/btn-border-hover 2.png');
   --bg-border3: url('/assets/img/icon/btn-border-hover 2.png');
   --color-dark1: #babcc0;
+  --bg-team: #FFFFFF;
+  --bg-col: rgba(92, 198, 208, 0.20);
+  --bg-logoo: url('/assets/img/icon/TICK.png');
+  --bg-our: #5CC6D0;
 }
 
 /* reset css start */
@@ -93,6 +97,11 @@ html {
       --bg-border2: url('/assets/img/icon/btn-border.svg');
       --color-dark1: #252527;
         --bg-border3: url('/assets/img/icon/btn-border-hover 2.png');
+        --bg-team: #0a0d12;
+        --bg-col: #03050d;
+        --bg-logoo: url('/assets/img/icon/badge_active.svg');
+        --bg-our: #0a0d12;
+        }
       }
   }
 
@@ -2703,7 +2712,7 @@ h6 {
       font-size: 14px;
       font-weight: 600;
       letter-spacing: 1.4px;
-      color: var(--color-target);
+      color: white;
       padding: 13px 27px; 
     }
       .blockchain-header__account a::before {
@@ -3029,7 +3038,7 @@ h6 {
 .blc-btn {
   font-size: 14px;
   font-weight: 700;
-  color: var(--color-white);
+  color: white;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -3108,7 +3117,7 @@ h6 {
 }
   .btns a {
     margin: 12px; 
-    color: var(--color-target);
+    color: var(--color-white);
   }
 
 /*----------------------------------------*/
@@ -4997,7 +5006,7 @@ margin-right: 100px;
     bottom: 3%;
     right: 0; }
 .team__single {
-  background-color: #0b0e13;
+  background-color: var(--bg-team);
   min-height: 366px;
   background-repeat: no-repeat;
   background-position: center center;
@@ -5025,7 +5034,7 @@ margin-right: 100px;
   .team__single:hover::after {
     opacity: 1; }
   .team__single.style2 {
-    background-color: #0a0d12;}
+    background-color:var(--bg-team);}
     .team__single.style2::before, .team__single.style2::after {
       left: auto;
       right: 40px;
@@ -5105,7 +5114,7 @@ margin-right: 100px;
   .faq__blockchain .accordion_box .block {
     border-color: #262932 !important; }
     .faq__blockchain .accordion_box .block .acc-btn {
-      padding: 30px 0;
+      padding: 30px 30pxassets/img/icon/badge_active.svg;
       font-family: 'Titillium Web', sans-serif;
       font-weight: 400; }
     .faq__blockchain .accordion_box .block .content {
@@ -5451,7 +5460,7 @@ margin-right: 100px;
   padding: 115px 95px;
   padding-top: 110px;
   position: relative; 
-background-color: #0B0E13;
+background-color: var(--bg-our);
 border-radius: 30px;}
   @media (max-width: 1200px) {
     .brand__wrap {
@@ -5502,7 +5511,7 @@ border-radius: 30px;}
   left: -35px;
   width: 105%;
   height: 100%;
-background-color: #0B0E13;
+background-color: var(--bg-our);
 border-radius: 30px;
   content: "";
   z-index: -1; }
@@ -5597,7 +5606,7 @@ border-radius: 30px;
       text-align: center; }
     .ico-contact__wrap input, .ico-contact__wrap textarea {
       height: 50px;
-      background-color: #0B0B29;
+      background-color: var(--bg-our);
       border-radius: 5px;
       -webkit-border-radius: 5px;
       -moz-border-radius: 5px;
@@ -6466,7 +6475,7 @@ blockquote {
   background-position: center 76%; }
 
 .advantages-table {
-background-color: #0a0d12;
+background-color: var(--bg--logo);
 border-radius: 30px;
   border-collapse: separate;
   padding: 50px;
@@ -6501,12 +6510,15 @@ border-radius: 30px;
     right: 1px;
     clip-path: polygon(100% 0, 0 100%, 100% 100%); }
   .advantages-table thead {
-    background-color: #03050E;
+    background-color: var(--bg-col);
+    
     border: 1px solid #262932; }
     .advantages-table thead tr {
+      
       padding: 10px 50px;
       padding-top: 50px; }
     .advantages-table thead th {
+      color: var(--color-white);
       font-size: 18px;
       padding: 17px 50px; }
       @media (max-width: 1199px) {
@@ -6516,7 +6528,7 @@ border-radius: 30px;
   .advantages-table tbody tr td {
     font-size: 18px;
     font-weight: 600;
-    color: white; }
+    color: var(--color-white); }
     @media (max-width: 991px) {
       .advantages-table thead tr th,
       .advantages-table tbody tr td {
@@ -6527,7 +6539,7 @@ border-radius: 30px;
       .advantages-table tbody tr:first-child td {
         padding-top: 12px; } }
   .advantages-table tbody tr:nth-child(even) {
-    background-color: #03050E; }
+    background-color: var(--bg--logo); }
   .advantages-table tbody tr td {
     padding: 12px 50px; }
     @media (max-width: 1199px) {
@@ -8135,4 +8147,9 @@ input:checked + .slider:before {
 }
 .content1 {
   color: var(--color-white);
+}
+
+.image {
+  width: 24px;
+  height: 24px;
 }
